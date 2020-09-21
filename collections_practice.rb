@@ -33,4 +33,8 @@ def sum_array(array)
   array.inject(:+)
 end
 
+def add_s(array)
+  array.collect.each_with_index {|element, index| if(index != 2) element << "s"}
+end
+
 sort_array_char_count(["dogs", "cat", "Horses"])
